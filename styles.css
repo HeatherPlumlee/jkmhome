@@ -96,10 +96,13 @@ footer {
 -------------------------*/
 nav {
   text-align: center;
-  background: white;
+  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+              url(../images/lukas-blazek-261681-unsplash.jpg) no-repeat fixed;
+  background-size: cover;
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 5%;
   /*z-index: 100;*/
 }
 nav a {
@@ -107,8 +110,11 @@ nav a {
   padding: 15px 20px;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
+  color: aliceblue;
 }
+
+
 
 
 /* Work Experience
@@ -129,11 +135,7 @@ h3 ~ p {
 
 /* Education
 -------------------------*/
-.certificates {
-  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
-              url(../images/laptop-2.jpg) no-repeat fixed;
-  background-size: cover;
-}
+
 p + h3 {
   margin-top: 30px;
 }
@@ -157,7 +159,39 @@ p + h3 {
   header {
     text-align: center;
   }
-  .profile-img {
+  .profile-logo {
+    width: 200px;
+  }
+   
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}    
+    
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-logo {
     width: 200px;
   }
 }
